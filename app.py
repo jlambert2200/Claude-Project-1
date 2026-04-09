@@ -9,7 +9,7 @@ import schedule
 from dotenv import load_dotenv
 
 from mlb import check_for_wins
-from sms import send_win_text
+from notify import send_win_text
 
 load_dotenv()
 
@@ -64,8 +64,8 @@ def check_and_notify():
             win["opponent_name"],
         )
         try:
-            sid = send_win_text(win)
-            log.info("Text sent! Message SID: %s", sid)
+            result = send_win_text(win)
+            log.info("Text sent! Result: %s", result)
             notified.add(game_id)
             save_notified_games(notified)
         except Exception:

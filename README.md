@@ -6,7 +6,7 @@ Sends your wife a text message every time the Arizona Diamondbacks win a basebal
 
 1. Polls the [MLB Stats API](https://statsapi.mlb.com) every 15 minutes (configurable)
 2. Detects when a Diamondbacks game has ended with a D-backs win
-3. Sends an SMS via Twilio with the score and opponent
+3. Sends a text via **iMessage** or **email-to-SMS** carrier gateway
 4. Tracks notified games so you never get duplicate texts
 
 ## Setup
@@ -17,35 +17,50 @@ Sends your wife a text message every time the Arizona Diamondbacks win a basebal
 pip install -r requirements.txt
 ```
 
-### 2. Create a Twilio account
-
-1. Sign up at [twilio.com](https://www.twilio.com)
-2. Get a phone number from the Twilio console
-3. Note your Account SID and Auth Token
-
-### 3. Configure environment variables
+### 2. Configure environment variables
 
 ```bash
 cp .env.example .env
 ```
 
-Edit `.env` with your values:
+Then pick a notification method:
 
-| Variable | Description |
-|---|---|
-| `TWILIO_ACCOUNT_SID` | Your Twilio Account SID |
-| `TWILIO_AUTH_TOKEN` | Your Twilio Auth Token |
-| `TWILIO_FROM_NUMBER` | Your Twilio phone number (e.g. `+14155551234`) |
-| `TO_PHONE_NUMBER` | Your wife's phone number (e.g. `+14155556789`) |
-| `CHECK_INTERVAL_MINUTES` | How often to check for results (default: `15`) |
+### Option A: iMessage (macOS only — recommended)
 
-### 4. Run the app
+Requires running on a Mac with Messages.app signed into iMessage.
+
+```env
+NOTIFY_METHOD=imessage
+TO_PHONE_NUMBER=+14155556789
+```
+
+That's it — no API keys, no accounts, no cost.
+
+### Option B: Email-to-SMS (any platform — free)
+
+Uses your email to send a text through your wife's carrier SMS gateway. Works on Mac, Linux, or Windows.
+
+```env
+NOTIFY_METHOD=email_sms
+TO_PHONE_NUMBER=+14155556789
+CARRIER=verizon
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=you@gmail.com
+SMTP_PASSWORD=your_app_password
+```
+
+**Supported carriers:** att, tmobile, verizon, sprint, uscellular, boost, cricket, metro, googlefi, mint
+
+> **Gmail users:** You'll need an [App Password](https://myaccount.google.com/apppasswords) (not your regular password).
+
+### 3. Run the app
 
 ```bash
 python app.py
 ```
 
-The app will check immediately on startup and then every 15 minutes. It runs continuously — use `Ctrl+C` to stop.
+The app checks immediately on startup and then every 15 minutes. Runs continuously — `Ctrl+C` to stop.
 
 ### Run in the background (optional)
 
