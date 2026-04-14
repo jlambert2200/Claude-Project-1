@@ -1,0 +1,432 @@
+{
+  "_comment": "Mock B2B search index for the discovery agent. Each entry carries a list of search keywords and a full supplier record. The discovery agent matches search queries against these keywords. Entries are intentionally spread across 3 tiers so iterative query expansion surfaces new suppliers in later rounds.",
+  "entries": [
+    {
+      "keywords": ["chemical intermediates", "fine chemicals", "china supplier", "reagents"],
+      "supplier": {
+        "supplier_id": "d-001",
+        "name": "Shandong Liantai Chemical Co.",
+        "location": "Jinan, Shandong, CN",
+        "about_text": "General industrial chemical supplier established 2005. We supply standard reagents and fine chemicals to domestic and export markets. Full documentation provided.",
+        "payment_terms": "T/T, L/C",
+        "shipping_terms": "Standard IATA/IMDG packaging, full documentation.",
+        "products": [
+          {"name": "Sodium chloride", "cas": "7647-14-5", "description": "Industrial grade"},
+          {"name": "Citric acid", "cas": "77-92-9", "description": "Food grade"},
+          {"name": "Glucose", "cas": "50-99-7", "description": "Technical grade"},
+          {"name": "Ethanol", "cas": "64-17-5", "description": "95%"},
+          {"name": "Toluene", "cas": "108-88-3", "description": "Industrial grade"},
+          {"name": "Acetone", "cas": "67-64-1", "description": "Industrial grade"}
+        ]
+      }
+    },
+    {
+      "keywords": ["chemical intermediates", "pharmaceutical intermediates", "china export", "api"],
+      "supplier": {
+        "supplier_id": "d-002",
+        "name": "Anhui Pharmatech Intermediates Ltd.",
+        "location": "Hefei, Anhui, CN",
+        "about_text": "Pharmaceutical intermediate supplier for bulk API manufacturing. Custom synthesis available for research and industrial clients. We work with research institutions and contract manufacturers. Contact us with your specification.",
+        "payment_terms": "T/T, 30% advance. Western Union for small trial orders.",
+        "shipping_terms": "DHL, FedEx worldwide. Door to door service available.",
+        "products": [
+          {"name": "Pharmaceutical Intermediate", "description": "Details on request"},
+          {"name": "API Intermediate", "description": "Contact for specifications"},
+          {"name": "Phenylacetic acid", "cas": "103-82-2", "description": "99%, bulk supply"},
+          {"name": "Acetone", "cas": "67-64-1", "description": "HPLC grade"},
+          {"name": "Acetic anhydride", "cas": "108-24-7", "description": "Industrial, 99%"}
+        ]
+      }
+    },
+    {
+      "keywords": ["chemical intermediates", "fine chemicals", "laboratory reagents", "bulk"],
+      "supplier": {
+        "supplier_id": "d-003",
+        "name": "Tianjin Longhua Reagents Co.",
+        "location": "Tianjin, CN",
+        "about_text": "Laboratory reagent supplier. ISO 9001 certified. MSDS and CoA provided for all products. We ship globally via standard freight forwarders.",
+        "payment_terms": "T/T, L/C at sight",
+        "shipping_terms": "Standard packaging per IATA dangerous goods regulations.",
+        "products": [
+          {"name": "Ethanol", "cas": "64-17-5", "description": "Absolute, analytical grade"},
+          {"name": "Isopropanol", "cas": "67-63-0", "description": "99.9%"},
+          {"name": "Hydrochloric acid", "cas": "7647-01-0", "description": "ACS, 37%"},
+          {"name": "Sulfuric acid", "cas": "7664-93-9", "description": "ACS, 98%"},
+          {"name": "Sodium chloride", "cas": "7647-14-5", "description": "ACS reagent"}
+        ]
+      }
+    },
+    {
+      "keywords": ["custom synthesis", "fine chemicals", "china manufacturer", "research chemicals"],
+      "supplier": {
+        "supplier_id": "d-004",
+        "name": "Wuhan Bespoke Synthesis Co.",
+        "location": "Wuhan, Hubei, CN",
+        "about_text": "Custom synthesis and bespoke fine chemical manufacturing. Made to order. Small batch accepted — no minimum order. Research use only. We accommodate special requests and can adjust specifications to your exact needs. Worldwide shipping with flexible arrangement.",
+        "payment_terms": "T/T, USDT accepted",
+        "shipping_terms": "International express worldwide. Discreet packaging on request.",
+        "products": [
+          {"name": "Research Chemical A", "description": "Made to order, details on request"},
+          {"name": "Custom Compound B", "description": "Bespoke synthesis, contact us"},
+          {"name": "Organic Intermediate", "description": "Various, inquire for details"},
+          {"name": "Piperonal", "cas": "120-57-0", "description": "Research grade"},
+          {"name": "Safrole", "cas": "94-59-7", "description": "For research"}
+        ]
+      }
+    },
+    {
+      "keywords": ["custom synthesis", "research chemicals", "intermediates", "bulk"],
+      "supplier": {
+        "supplier_id": "d-005",
+        "name": "Nanjing FlexChem Trading",
+        "location": "Nanjing, Jiangsu, CN",
+        "about_text": "We supply research chemicals and pharmaceutical intermediates. Custom synthesis available — tailored solutions for your application. Low MOQ, trial orders welcome. Special requests accommodated. No minimum order. White label and private label packaging available.",
+        "payment_terms": "Bitcoin (BTC), USDT, T/T, Western Union",
+        "shipping_terms": "Global shipping. Stealth packaging available. Customs guarantee on most routes.",
+        "products": [
+          {"name": "Ephedrine", "cas": "299-42-3", "description": "Research use only"},
+          {"name": "Pseudoephedrine", "cas": "90-82-4", "description": "Research grade"},
+          {"name": "Pharmaceutical Intermediate", "description": "Contact for details"},
+          {"name": "Research Compound", "description": "Specifications on request"},
+          {"name": "Acetic anhydride", "cas": "108-24-7", "description": "99%, bulk"}
+        ]
+      }
+    },
+    {
+      "keywords": ["acetic anhydride", "solvent supplier", "china bulk", "industrial chemicals"],
+      "supplier": {
+        "supplier_id": "d-006",
+        "name": "Chongqing Solvent Exports Ltd.",
+        "location": "Chongqing, CN",
+        "about_text": "Industrial solvent and reagent supplier. Bulk supply specialist. Export oriented, door to door, DDP terms available. We have been supplying global clients since 2009.",
+        "payment_terms": "T/T, L/C",
+        "shipping_terms": "DDP worldwide, international express, door to door.",
+        "products": [
+          {"name": "Acetic anhydride", "cas": "108-24-7", "description": "Industrial 99%"},
+          {"name": "Acetone", "cas": "67-64-1", "description": "Industrial"},
+          {"name": "Methyl ethyl ketone", "cas": "78-93-3", "description": "MEK, 99%"},
+          {"name": "Toluene", "cas": "108-88-3", "description": "Industrial"},
+          {"name": "Diethyl ether", "cas": "60-29-7", "description": "99%, export grade"}
+        ]
+      }
+    },
+    {
+      "keywords": ["potassium permanganate", "oxidizer supplier", "china export", "industrial"],
+      "supplier": {
+        "supplier_id": "d-007",
+        "name": "Sichuan Oxidant Chemical Co.",
+        "location": "Chengdu, Sichuan, CN",
+        "about_text": "Specialist in industrial oxidizers and reagents. Bulk supply, competitive pricing for large orders. Full MSDS and SDS documentation. Export to over 40 countries.",
+        "payment_terms": "T/T, L/C at sight",
+        "shipping_terms": "Hazmat compliant packaging, IMDG documentation.",
+        "products": [
+          {"name": "Potassium permanganate", "cas": "7722-64-7", "description": "Technical grade, 99%"},
+          {"name": "Sodium chlorate", "cas": "7775-09-9", "description": "Industrial"},
+          {"name": "Hydrogen peroxide", "cas": "7722-84-1", "description": "35%, industrial"},
+          {"name": "Citric acid", "cas": "77-92-9", "description": "Industrial grade"}
+        ]
+      }
+    },
+    {
+      "keywords": ["potassium permanganate", "research chemicals", "custom synthesis", "bulk"],
+      "supplier": {
+        "supplier_id": "d-008",
+        "name": "Guangxi Research Supply Co.",
+        "location": "Nanning, Guangxi, CN",
+        "about_text": "Research chemicals and fine intermediates. Flexible specifications and custom packaging available. We accommodate buyer requirements and can meet your exact specification. Special requests accepted. No questions asked on payment methods.",
+        "payment_terms": "BTC, USDT, Moneygram, Western Union",
+        "shipping_terms": "Any destination. Discreet packaging, plain package, no label option.",
+        "products": [
+          {"name": "Potassium permanganate", "cas": "7722-64-7", "description": "Research grade"},
+          {"name": "Phenylacetic acid", "cas": "103-82-2", "description": "Research use"},
+          {"name": "Organic Intermediate 99%", "description": "Details on request"},
+          {"name": "Special Chemical", "description": "Confidential listing, inquire"}
+        ]
+      }
+    },
+    {
+      "keywords": ["pharmaceutical intermediates", "api synthesis", "china manufacturer"],
+      "supplier": {
+        "supplier_id": "d-009",
+        "name": "Zhejiang Pharma Synthesis Ltd.",
+        "location": "Hangzhou, Zhejiang, CN",
+        "about_text": "GMP-compliant pharmaceutical intermediate manufacturer. We require end-use certificates for controlled substances. Documentation and regulatory compliance are part of every transaction. Export permits handled in-house.",
+        "payment_terms": "T/T only. KYC verification required for new buyers.",
+        "shipping_terms": "Full customs documentation, DHL / FedEx standard.",
+        "products": [
+          {"name": "Pharmaceutical Intermediate X", "cas": "103-82-2", "description": "GMP grade, CoA provided"},
+          {"name": "API Intermediate Y", "description": "GMP, license required"},
+          {"name": "Citric acid", "cas": "77-92-9", "description": "USP"},
+          {"name": "Glucose", "cas": "50-99-7", "description": "USP grade"}
+        ]
+      }
+    },
+    {
+      "keywords": ["safrole", "piperonal", "research chemicals", "fine chemicals"],
+      "supplier": {
+        "supplier_id": "d-010",
+        "name": "Yunnan Aromatic Chemicals Ltd.",
+        "location": "Kunming, Yunnan, CN",
+        "about_text": "Supplier of aromatic compounds and fragrance chemicals. Some products require documentation. We can customize packaging and labeling for export clients. Special requests welcome.",
+        "payment_terms": "T/T, USDT",
+        "shipping_terms": "International express. Custom labeling available on request.",
+        "products": [
+          {"name": "Piperonal", "cas": "120-57-0", "description": "Fragrance grade, 99%"},
+          {"name": "Safrole", "cas": "94-59-7", "description": "Technical grade"},
+          {"name": "Ethanol", "cas": "64-17-5", "description": "95%"},
+          {"name": "Aromatic Compound", "description": "Specifications on request"},
+          {"name": "Organic Intermediate", "description": "Various grades available"}
+        ]
+      }
+    },
+    {
+      "keywords": ["ephedrine", "pseudoephedrine", "pharmaceutical", "bulk supply"],
+      "supplier": {
+        "supplier_id": "d-011",
+        "name": "Shaanxi Alkaloid Research Supplies",
+        "location": "Xi'an, Shaanxi, CN",
+        "about_text": "Alkaloid and pharmaceutical raw material supplier. Research use only. All shipments require end-use certificate and import licence documentation. License required for scheduled substances. REACH and regulatory compliance our priority.",
+        "payment_terms": "T/T only. Documentation verification required.",
+        "shipping_terms": "Standard freight with full customs declaration.",
+        "products": [
+          {"name": "Ephedrine HCl", "cas": "299-42-3", "description": "Pharmaceutical grade, documentation required"},
+          {"name": "Pseudoephedrine", "cas": "90-82-4", "description": "Research standard, license required"},
+          {"name": "Citric acid", "cas": "77-92-9", "description": "USP"}
+        ]
+      }
+    },
+    {
+      "keywords": ["ephedrine", "intermediates", "research", "no documentation", "special chemicals"],
+      "supplier": {
+        "supplier_id": "d-012",
+        "name": "Henan Special Compounds Co.",
+        "location": "Zhengzhou, Henan, CN",
+        "about_text": "Specialty compounds and research intermediates. We can accommodate any destination. Flexible arrangement available for special requests. No documentation required for most products. Anonymous orders accepted. Guaranteed 100% delivery worldwide.",
+        "payment_terms": "Bitcoin only. No wire for this product range.",
+        "shipping_terms": "Stealth packaging, guaranteed delivery, any country. We bypass customs holds for sensitive shipments.",
+        "products": [
+          {"name": "Research Intermediate A", "description": "Inquire for details, not for public listing"},
+          {"name": "Special Compound B", "description": "Anonymous order accepted"},
+          {"name": "Undisclosed Chemical", "description": "Contact privately"},
+          {"name": "Ephedrine", "cas": "299-42-3", "description": "Bulk supply"},
+          {"name": "Norephedrine", "cas": "14838-15-4", "description": "Research grade"}
+        ]
+      }
+    },
+    {
+      "keywords": ["phenylacetic acid", "solvents", "bulk export", "china chemicals"],
+      "supplier": {
+        "supplier_id": "d-013",
+        "name": "Jiangxi Bulk Chemicals Export",
+        "location": "Nanchang, Jiangxi, CN",
+        "about_text": "Bulk chemical exporter. ISO certified. Competitive pricing on large orders. Full MSDS, SDS, and Certificate of Analysis for every lot. Standard payment terms.",
+        "payment_terms": "T/T, L/C",
+        "shipping_terms": "FCL and LCL available, full customs documentation.",
+        "products": [
+          {"name": "Phenylacetic acid", "cas": "103-82-2", "description": "Technical, 99%"},
+          {"name": "Toluene", "cas": "108-88-3", "description": "Industrial"},
+          {"name": "Acetone", "cas": "67-64-1", "description": "Industrial"},
+          {"name": "Sodium chloride", "cas": "7647-14-5", "description": "Industrial"},
+          {"name": "Citric acid", "cas": "77-92-9", "description": "Food grade"}
+        ]
+      }
+    },
+    {
+      "keywords": ["research chemicals", "intermediates", "no minimum", "worldwide shipping"],
+      "supplier": {
+        "supplier_id": "d-014",
+        "name": "Hunan Global Research Supplies",
+        "location": "Changsha, Hunan, CN",
+        "about_text": "Research chemical supplier with worldwide shipping. No minimum order, trial orders accepted. Custom synthesis and OEM manufacturing available. We accommodate special requirements — just contact us. Private label packaging for discretion.",
+        "payment_terms": "USDT, BTC, T/T, Western Union",
+        "shipping_terms": "Worldwide, door to door. Plain packaging and private label available. International express.",
+        "products": [
+          {"name": "Research Chemical", "description": "Various, list on request"},
+          {"name": "Organic Intermediate", "description": "Details on request"},
+          {"name": "Fine Chemical Compound", "description": "Tailored solutions available"},
+          {"name": "Acetone", "cas": "67-64-1", "description": "Industrial"},
+          {"name": "Acetic anhydride", "cas": "108-24-7", "description": "99%"},
+          {"name": "Piperonal", "cas": "120-57-0", "description": "Research grade"}
+        ]
+      }
+    },
+    {
+      "keywords": ["laboratory reagents", "analytical chemicals", "china supplier", "ISO certified"],
+      "supplier": {
+        "supplier_id": "d-015",
+        "name": "Beijing Analytical Reagents Corp.",
+        "location": "Beijing, CN",
+        "about_text": "High-purity analytical and laboratory reagents. ISO/IEC 17025 certified. Full SDS, CoA, and regulatory documentation. No cryptocurrency accepted. All buyers subject to standard due diligence.",
+        "payment_terms": "T/T, L/C. No cryptocurrency.",
+        "shipping_terms": "Standard IATA packaging with full dangerous goods declaration.",
+        "products": [
+          {"name": "Sodium chloride", "cas": "7647-14-5", "description": "HPLC grade"},
+          {"name": "Glucose", "cas": "50-99-7", "description": "USP standard"},
+          {"name": "Isopropanol", "cas": "67-63-0", "description": "HPLC grade"},
+          {"name": "Ethanol", "cas": "64-17-5", "description": "Absolute, analytical"},
+          {"name": "Citric acid", "cas": "77-92-9", "description": "ACS reagent"}
+        ]
+      }
+    },
+    {
+      "keywords": ["solvents", "acetone", "toluene", "mek", "bulk export"],
+      "supplier": {
+        "supplier_id": "d-016",
+        "name": "Liaoning Solvent Industrial Group",
+        "location": "Shenyang, Liaoning, CN",
+        "about_text": "Large-volume solvent manufacturer for industrial applications. Export to Europe, Americas and Southeast Asia. Full REACH documentation on request.",
+        "payment_terms": "L/C, T/T",
+        "shipping_terms": "ISO tank, drum, IBC. Full hazmat documentation.",
+        "products": [
+          {"name": "Acetone", "cas": "67-64-1", "description": "Industrial, 99.5%"},
+          {"name": "Toluene", "cas": "108-88-3", "description": "Industrial, 99.5%"},
+          {"name": "Methyl ethyl ketone", "cas": "78-93-3", "description": "MEK, 99%"},
+          {"name": "Diethyl ether", "cas": "60-29-7", "description": "Industrial"}
+        ]
+      }
+    },
+    {
+      "keywords": ["special chemicals", "research intermediates", "flexible", "any destination"],
+      "supplier": {
+        "supplier_id": "d-017",
+        "name": "Fujian Flexible Chemicals Co.",
+        "location": "Fuzhou, Fujian, CN",
+        "about_text": "We specialize in chemicals for flexible arrangements. Any destination, any buyer. Flexible MOQ and no minimum order. We can meet your requirement regardless of specifications. Custom synthesis, made to order, white label packaging. Research use.",
+        "payment_terms": "BTC, USDT, Moneygram preferred. Wire available.",
+        "shipping_terms": "Any country. Stealth packaging, relabeling, and private label on request. We guarantee 100% delivery.",
+        "products": [
+          {"name": "Special Intermediate", "description": "Not for public listing, inquire"},
+          {"name": "Flexible Compound", "description": "Any specification, contact us"},
+          {"name": "Potassium permanganate", "cas": "7722-64-7", "description": "Bulk"},
+          {"name": "Phenylacetic acid", "cas": "103-82-2", "description": "99%"},
+          {"name": "Norephedrine", "cas": "14838-15-4", "description": "Research grade"}
+        ]
+      }
+    },
+    {
+      "keywords": ["fine chemicals", "custom synthesis", "toll manufacturing", "oem"],
+      "supplier": {
+        "supplier_id": "d-018",
+        "name": "Suzhou TollChem Manufacturing Ltd.",
+        "location": "Suzhou, Jiangsu, CN",
+        "about_text": "Toll manufacturing and contract synthesis. OEM manufacturing available. We produce fine chemicals to buyer specifications, including bespoke intermediates and custom compounds. Tailored solutions for pharmaceutical, agrochemical, and research clients.",
+        "payment_terms": "T/T, L/C. Standard business terms.",
+        "shipping_terms": "Standard freight, full documentation.",
+        "products": [
+          {"name": "Custom Intermediate", "description": "Made to order per specification"},
+          {"name": "Bespoke Fine Chemical", "description": "Toll manufacturing"},
+          {"name": "Phenylacetic acid", "cas": "103-82-2", "description": "GMP grade"},
+          {"name": "Acetic anhydride", "cas": "108-24-7", "description": "Pharmaceutical grade"},
+          {"name": "Acetone", "cas": "67-64-1", "description": "HPLC grade"}
+        ]
+      }
+    },
+    {
+      "keywords": ["research use only", "research chemicals", "no restrictions", "new products"],
+      "supplier": {
+        "supplier_id": "d-019",
+        "name": "Shenzhen New Research Compounds",
+        "location": "Shenzhen, Guangdong, CN",
+        "about_text": "New research compounds supplier. Products are for research use only, not for human use. We can adjust labeling and packaging to meet client requirements. No restrictions on order quantity. Flexible arrangement for bulk buyers. Laboratory use only.",
+        "payment_terms": "USDT, BTC, Western Union",
+        "shipping_terms": "Worldwide shipping, discreet packaging on request. International express.",
+        "products": [
+          {"name": "New Research Compound", "description": "Various, catalog on request"},
+          {"name": "Research Use Chemical", "description": "Lab use only, contact us"},
+          {"name": "Safrole", "cas": "94-59-7", "description": "Research grade"},
+          {"name": "Piperonal", "cas": "120-57-0", "description": "Fragrance/research"},
+          {"name": "Organic Intermediate", "description": "Details on request"}
+        ]
+      }
+    },
+    {
+      "keywords": ["chemical intermediates", "export china", "shandong", "hebei", "solvents bulk"],
+      "supplier": {
+        "supplier_id": "d-020",
+        "name": "Hebei Standard Industrial Chemicals",
+        "location": "Shijiazhuang, Hebei, CN",
+        "about_text": "Standard industrial chemical supplier. ISO 9001 certified. We supply solvents, acids, and reagents to domestic and international clients with full documentation.",
+        "payment_terms": "T/T, L/C",
+        "shipping_terms": "Standard IMDG/IATA documentation.",
+        "products": [
+          {"name": "Sulfuric acid", "cas": "7664-93-9", "description": "Industrial 98%"},
+          {"name": "Hydrochloric acid", "cas": "7647-01-0", "description": "Technical 36%"},
+          {"name": "Acetone", "cas": "67-64-1", "description": "Industrial"},
+          {"name": "Sodium chloride", "cas": "7647-14-5", "description": "Industrial"},
+          {"name": "Ethanol", "cas": "64-17-5", "description": "95% industrial"}
+        ]
+      }
+    },
+    {
+      "keywords": ["acetic anhydride", "phenylacetic acid", "bulk", "worldwide", "export"],
+      "supplier": {
+        "supplier_id": "d-021",
+        "name": "Gansu Chemical Traders Ltd.",
+        "location": "Lanzhou, Gansu, CN",
+        "about_text": "Bulk chemical trader and exporter. We stock a wide range of products including industrial solvents and fine chemicals. Made to order service available. OEM packaging and custom labeling on request. Export worldwide.",
+        "payment_terms": "T/T, USDT accepted for international orders",
+        "shipping_terms": "Door to door, worldwide shipping, DDP available.",
+        "products": [
+          {"name": "Acetic anhydride", "cas": "108-24-7", "description": "Technical 99%"},
+          {"name": "Phenylacetic acid", "cas": "103-82-2", "description": "Technical"},
+          {"name": "Acetone", "cas": "67-64-1", "description": "Industrial"},
+          {"name": "Toluene", "cas": "108-88-3", "description": "Industrial"},
+          {"name": "Custom Intermediate", "description": "Made to order"}
+        ]
+      }
+    },
+    {
+      "keywords": ["no documentation", "anonymous", "special requests", "any buyer", "stealth"],
+      "supplier": {
+        "supplier_id": "d-022",
+        "name": "Xinjiang Discrete Chemical Supply",
+        "location": "Urumqi, Xinjiang, CN",
+        "about_text": "We supply special chemicals to any buyer. No questions asked. Anonymous orders accepted. No documentation required. Any destination, any country. Flexible arrangement and stealth packaging standard. Completely discreet.",
+        "payment_terms": "Bitcoin only. No wire transfers, no paper trail.",
+        "shipping_terms": "Stealth shipping, bypass customs, guaranteed delivery, no label, any destination.",
+        "products": [
+          {"name": "Undisclosed Chemical 1", "description": "Not for public listing"},
+          {"name": "Special Compound X", "description": "Anonymous order, contact only"},
+          {"name": "Research Intermediate", "description": "Confidential listing"},
+          {"name": "Ephedrine", "cas": "299-42-3", "description": "Bulk, no documentation"},
+          {"name": "Acetic anhydride", "cas": "108-24-7", "description": "Any quantity"}
+        ]
+      }
+    },
+    {
+      "keywords": ["oxidizers", "permanganate", "industrial", "china manufacturer"],
+      "supplier": {
+        "supplier_id": "d-023",
+        "name": "Inner Mongolia Oxidant Factory",
+        "location": "Hohhot, Inner Mongolia, CN",
+        "about_text": "Large-scale oxidant chemical factory. ISO certified. Full MSDS and SDS for all products. Export documentation provided.",
+        "payment_terms": "T/T, L/C",
+        "shipping_terms": "Hazmat compliant. Full customs documentation.",
+        "products": [
+          {"name": "Potassium permanganate", "cas": "7722-64-7", "description": "Technical 99%"},
+          {"name": "Hydrogen peroxide", "cas": "7722-84-1", "description": "50%, industrial"},
+          {"name": "Sodium hypochlorite", "cas": "7681-52-9", "description": "10-12%"}
+        ]
+      }
+    },
+    {
+      "keywords": ["research chemicals", "lab chemicals", "small batch", "flexible", "global"],
+      "supplier": {
+        "supplier_id": "d-024",
+        "name": "Qinghai Research Chemicals Supply",
+        "location": "Xining, Qinghai, CN",
+        "about_text": "Global supplier of laboratory and research chemicals. Small batch accepted, trial orders welcome. We accommodate special requests. Flexible specifications. Custom synthesis and OEM services. Lab use only. Contact us for details on request.",
+        "payment_terms": "USDT, T/T, MoneyGram",
+        "shipping_terms": "International express worldwide. Plain packaging available.",
+        "products": [
+          {"name": "Research Chemical", "description": "Various, list available on request"},
+          {"name": "Lab Chemical B", "description": "Specifications on request"},
+          {"name": "Safrole", "cas": "94-59-7", "description": "Lab grade"},
+          {"name": "Norephedrine", "cas": "14838-15-4", "description": "Research"},
+          {"name": "Organic Intermediate", "description": "Contact for specification"},
+          {"name": "Acetone", "cas": "67-64-1", "description": "Lab grade"}
+        ]
+      }
+    }
+  ]
+}
